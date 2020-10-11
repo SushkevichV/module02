@@ -7,7 +7,7 @@ public class Deco10 {
 
 	public static void main(String[] args) {
 		int n = 651050184;
-		int[] a = new int[Tmp(n)];
+		int[] a = new int[count(n)];
 		
 		for(int i=a.length-1; i>=0; i--) {
 			a[i]=n%10;
@@ -20,14 +20,14 @@ public class Deco10 {
 
 	}
 
-	private static int Tmp(int n) {
-		int count=0;
+	private static int count(int n) {
+		int c=0;
 		
 		while (n>0) {
 			n=n/10;
-			count++;
+			c++;
 		}
-		return count;
+		return c;
 	}
 
 }

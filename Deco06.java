@@ -14,7 +14,7 @@ public class Deco06 {
 			System.out.print(a[i]+" ");
 		}
 		
-		nod = Nod(Nod(a[0],a[1]),a[2]);
+		nod = nod(nod(a[0],a[1]),a[2]);
 				
 		if (nod>1) {
 			System.out.println("не являются взаимно простыми.");
@@ -25,7 +25,7 @@ public class Deco06 {
 
 	}
 
-	private static int Nod(int a, int b) {
+	private static int nod(int a, int b) {
 		int tmp;
 		
 		while(a!=0) {

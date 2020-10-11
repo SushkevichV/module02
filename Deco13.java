@@ -10,8 +10,8 @@ public class Deco13 {
 		
 		if (n>2) {
 			for (int i=n; i<n*2-1; i++) {
-				if(Simple(i)==false) {
-					if(Simple(i+2)==false) {
+				if(simple(i)==false) {
+					if(simple(i+2)==false) {
 						System.out.printf("%d и %d%n",i, i+2);
 					}
 				}
@@ -20,7 +20,7 @@ public class Deco13 {
 
 	}
 	
-	private static boolean Simple (int i) {
+	private static boolean simple (int i) {
 		boolean tmp = false;
 		
 		for(int j=2; j<i; j++) { 	//перебираем делители в промежутке от 2 до i-1

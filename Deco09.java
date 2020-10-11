@@ -21,14 +21,14 @@ public class Deco09 {
 		t=(int)(Math.random()*10)+2;
 		
 		d=Math.sqrt(x*x+y*y); //диагональ
-		s1=Square(x,y,d);
-		s2=Square(z,t,d);
+		s1=square(x,y,d);
+		s2=square(z,t,d);
 		System.out.printf("Площадь четырехугольника со сторонами %d, %d, %d, %d равна %f", x,y,z,t,s1+s2);
 
 
 	}
 
-	private static double Square(int x, int y, double d) {
+	private static double square(int x, int y, double d) {
 		double p;
 		double val;
 		

@@ -8,11 +8,11 @@ public class Deco11 {
 		long n1 = 564631;
 		long n2 = 654210654180095L;
 				
-		if(Tmp(n1)<Tmp(n2)) {
+		if(count(n1)<count(n2)) {
 			System.out.printf("В числе %d больше цифр, чем в числе %d",n2, n1);
 		}
 		else {
-			if(Tmp(n1)>Tmp(n2)) {
+			if(count(n1)>count(n2)) {
 				System.out.printf("В числе %d больше цифр, чем в числе %d",n1, n2);
 			}
 			else {
@@ -24,14 +24,14 @@ public class Deco11 {
 
 	}
 
-	private static int Tmp(long n) {
-		int count=0;
+	private static int count(long n) {
+		int c=0;
 		
 		while (n>0) {
 			n=n/10;
-			count++;
+			c++;
 		}
-		return count;
+		return c;
 	}
 
 }

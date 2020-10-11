@@ -13,20 +13,20 @@ public class Deco01 {
 		a=(int)(Math.random()*10)+1;
 		b=(int)(Math.random()*20)+1;
 		
-		System.out.println("Наибольший общий делитель для чисел "+a+" и "+b+" >> "+Nod(a,b));
-		System.out.println("Наименьшее общее кратное для чисел "+a+" и "+b+" >> "+Nok(a,b));
+		System.out.println("Наибольший общий делитель для чисел "+a+" и "+b+" >> "+nod(a,b));
+		System.out.println("Наименьшее общее кратное для чисел "+a+" и "+b+" >> "+nok(a,b));
 
 	}
 
-	private static int Nok(int a, int b) {
+	private static int nok(int a, int b) {
 		int val;
 		
-		val=a*b/Nod(a,b);
+		val=a*b/nod(a,b);
 		
 		return val;
 	}
 
-	private static int Nod(int a, int b) {
+	private static int nod(int a, int b) {
 		int tmp;
 		
 		while(a!=0) {

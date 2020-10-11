@@ -11,11 +11,11 @@ public class Deco03 {
 		
 		a=(int)(Math.random()*10);
 		
-		System.out.println("Площать правильного шестиугольника со стороной "+a+" равна "+ Square(a)*6);
+		System.out.println("Площать правильного шестиугольника со стороной "+a+" равна "+ square(a)*6);
 
 	}
 
-	private static double Square(int a) {
+	private static double square(int a) {
 		double s;
 		
 		s=a*a*Math.sqrt(3)/4;

@@ -12,7 +12,7 @@ public class Deco12 {
 		int j = 0;
 		
 		for (int i=0; i<=n; i++) {
-			if(Tmp(i)==k) {
+			if(sum(i)==k) {
 				j++; // Определяем размер массива
 			}
 		}
@@ -22,7 +22,7 @@ public class Deco12 {
 		j=0;
 		
 		for (int i=0; i<=n; i++) {
-			if(Tmp(i)==k) {
+			if(sum(i)==k) {
 				a[j]=i; // Заполняем массив
 				j++;
 			}
@@ -34,14 +34,14 @@ public class Deco12 {
 
 	}
 	
-	private static int Tmp(int n) {
-		int sum=0;
+	private static int sum(int n) {
+		int s=0;
 		
 		while (n>0) {
-			sum+=n%10;
+			s+=n%10;
 			n=n/10;
 		}
-		return sum;
+		return s;
 	}
 
 }

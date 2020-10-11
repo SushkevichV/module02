@@ -19,12 +19,12 @@ public class Deco08 {
 		
 		System.out.println();
 		for(int i=0; i<d.length-2; i++) {
-			System.out.println("Сумма элементов от D["+(i+1)+"] до D["+(i+3)+"] равна "+Sum(d,i));
+			System.out.println("Сумма элементов от D["+(i+1)+"] до D["+(i+3)+"] равна "+sum(d,i));
 		}
 
 	}
 
-	private static int Sum(int[] d, int i) {
+	private static int sum(int[] d, int i) {
 		int sum = 0;
 		
 		for(int j=i; j<=i+2; j++) {

@@ -13,14 +13,14 @@ public class Deco14 {
 		System.out.println("Числа армстронга от 1 до "+k);
 		
 		for(int i=1; i<=k; i++) {
-			if(Arm(i)==i) {
+			if(arm(i)==i) {
 				System.out.println(i);
 			}
 		}
 
 	}
 
-	private static int Arm(int i) {
+	private static int arm(int i) {
 		int sum = 0;
 		int n = 0 ;
 		

@@ -27,12 +27,12 @@ public class Deco04 {
 			System.out.print("A"+(i+1)+"("+a[0][i]+";"+a[1][i]+")  "); // Элемент с индексом 0 - абсцисса, 1 - ордината
 		}
 	
-		max = Dist(a[0][0],a[0][1], a[1][0], a[1][1]);
+		max = dist(a[0][0],a[0][1], a[1][0], a[1][1]);
 	    
 		for(int i = 0; i < n; i++) {
 	        for(int j = i+1; j<n; j++) {
 	        	double tmp;
-	            tmp=Dist(a[0][i], a[0][j], a[1][i], a[1][j]);
+	            tmp=dist(a[0][i], a[0][j], a[1][i], a[1][j]);
 	            if(tmp>max) {
 	            	max = tmp;
 	            	point1 = i;
@@ -45,7 +45,7 @@ public class Deco04 {
 	    
 	}
 
-	private static double Dist(int x1, int x2, int y1, int y2) {
+	private static double dist(int x1, int x2, int y1, int y2) {
 		double dist;
 		
 		dist = Math.sqrt( Math.pow((x2-x1), 2) + Math.pow((y2-y1), 2));

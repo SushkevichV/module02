@@ -11,15 +11,15 @@ public class Deco16 {
 		long sum=0;
 		
 		for(int i=(int)(Math.pow(10,n-1));i<Math.pow(10,n); i++) {
-			if(Num(i)>0) {
+			if(oddNumber(i)>0) {
 				sum+=i;
 			}
 		}
 		
 		System.out.println("Сумма "+n+"-значных чисел, содержащих только нечетные цифры равна "+sum);
 		
-		if(Num2(sum)>0) {
-			System.out.println("Четных цифр в найденной сумме - "+Num2(sum));
+		if(evenNumber(sum)>0) {
+			System.out.println("Четных цифр в найденной сумме - "+evenNumber(sum));
 		}
 		else {
 			System.out.println("Сумма не содержит четных цифр");
@@ -29,14 +29,14 @@ public class Deco16 {
 
 	}
 
-	private static int Num(int i) {
+	private static int oddNumber(int i) {
 		int n = i%10;
 		
 		i/=10;
 		
 		if(n%2>0) {
 			if(i>0) {
-				n=Num(i);
+				n=oddNumber(i);
 			}
 		}
 		else {
@@ -46,7 +46,7 @@ public class Deco16 {
 		return n;
 	}
 	
-	private static int Num2(long sum) {
+	private static int evenNumber(long sum) {
 		int n=0;
 		
 		while(sum>0) {

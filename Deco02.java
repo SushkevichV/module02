@@ -18,13 +18,13 @@ public class Deco02 {
 		c=(int)(Math.random()*50)+1;
 		d=(int)(Math.random()*50)+1;
 		
-		val=Nod(Nod(a,b),Nod(c,d));
+		val=nod(nod(a,b),nod(c,d));
 				
 		System.out.println("Наибольший общий делитель для чисел "+a+", "+b+", "+c+" и "+d+" >> "+val);
 
 	}
 	
-	private static int Nod(int a, int b) {
+	private static int nod(int a, int b) {
 		int tmp;
 		
 		while(a!=0) {

@@ -12,7 +12,7 @@ public class Deco17 {
 		
 		System.out.println("Заданное число - "+n);
 		while (n>0) {
-			n=n-Sum(n);
+			n=n-sum(n);
 			count++;
 			System.out.println("Остаток от вычитания суммы цифр - "+n);
 		}
@@ -21,15 +21,15 @@ public class Deco17 {
 
 	}
 	
-	private static int Sum(int n) {
-		int sum=0;
+	private static int sum(int n) {
+		int s=0;
 		
 		while(n>0) {
-			sum+=n%10;
+			s+=n%10;
 			n/=10;
 		}
 	
-		return sum;
+		return s;
 	}
 
 }

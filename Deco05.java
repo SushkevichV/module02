@@ -14,11 +14,11 @@ public class Deco05 {
 			System.out.print(a[i]+" ");
 		}
 		
-		System.out.printf("%n%nВторое по величине число - %d", Max2(a));
+		System.out.printf("%n%nВторое по величине число - %d", secondMax(a));
 		
 	}
 
-	private static int Max2(int[] a) {
+	private static int secondMax(int[] a) {
 		int max = a[0];
 		int max2 = a[0];
 		
@@ -26,7 +26,9 @@ public class Deco05 {
 			if(a[i]>max) {
 				max=a[i];
 			}
-			
+		}
+		
+		for(int i=0; i<a.length; i++) {
 			if(a[i]<max && a[i]>max2) {
 				max2=a[i];
 			}
